@@ -1,0 +1,377 @@
+extends layout
+
+block content
+  .preloader
+    .loader.theme_background_color
+      span
+  .wrapper
+    nav.nim-menu.navbar.navbar-default.navbar-fixed-top
+      .container
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+         
+           .row-md-4
+            // social
+            ul.social
+              li
+                a(href='https://gmail.com/', target='_blank')
+                  i.fa.fa-google
+              
+              li
+                a(href='https://web.facebook.com/arvin.simbulan', target='_blank')
+                  i.fa.fa-facebook
+              li
+                a(href='https://www.youtube.com/channel/UC-WNybqooBWpWu--177iioA', target='_blank')
+                  i.fa.fa-youtube-play
+
+            // social end
+                
+
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a.page-scroll(href='/') Home
+          
+            li
+              a.page-scroll(href='#services') Services
+            li
+              a.page-scroll(href='#contact') Contact
+        // /.navbar-collapse
+      // /.container-fluid
+    
+    section#home.main-heading(style="background-image: url(/images/bg-wedding.jpg);")
+      .overlay
+        .container
+          .row
+            .main-heading-content.col-md-12.col-sm-12.text-center
+              h1.main-heading-title
+                | 
+                span.main-element.themecolor(data-elements='WEDDINGS')
+              p.main-heading-text
+                br
+                | 
+          
+              .btn-bar
+                
+                a.btn.btn-custom-outline(href='#contact') Contact Us
+
+    section#services.services.white-background.black
+      .container
+        .row.text-center
+          .col-md-12
+            h3.title
+              |   BEST
+              span.themecolor  WISHES
+            p.a-slog
+              | May it be done on church or elsewhere, our team is glad to share with you the most special day of your lives. Every angle and moment you want to capture are on the right hands. You may pick on the available packages to ensure that your memorable day will be truly remembered.
+          // /col
+        // /row
+        .gap
+        .row
+          .col-sm-6
+            doctype html
+            html
+              head
+                meta(charset='utf-8')
+                meta(name='viewport', content='width=device-width, initial-scale=1.0')
+                title
+              body(style="padding:0px; margin:0px; background-color:#fff;font-family:'Open Sans',sans-serif,arial,helvetica,verdana")
+                // #region Jssor Slider Begin
+                // Generator: Jssor Slider Maker
+                // Source: http://www.jssor.com
+                // This code works without jquery library.
+                script(src='js/jssor.slider-22.0.15.min.js', type='text/javascript', data-library='jssor.slider', data-version='22.0.15')
+                script(type='text/javascript').
+                  jssor_1_slider_init = function() {
+                  var jssor_1_options = {
+                  $AutoPlay: true,
+                  $SlideWidth: 600,
+                  $Cols: 2,
+                  $Align: 100,
+                  $ArrowNavigatorOptions: {
+                  $Class: $JssorArrowNavigator$
+                  },
+                  $BulletNavigatorOptions: {
+                  $Class: $JssorBulletNavigator$
+                  }
+                  };
+                  var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+                  /*responsive code begin*/
+                  /*you can remove responsive code if you don't want the slider scales while window resizing*/
+                  function ScaleSlider() {
+                  var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                  if (refSize) {
+                  refSize = Math.min(refSize, 800);
+                  jssor_1_slider.$ScaleWidth(refSize);
+                  }
+                  else {
+                  window.setTimeout(ScaleSlider, 30);
+                  }
+                  }
+                  ScaleSlider();
+                  $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                  $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+                  $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                  /*responsive code end*/
+                  };
+                style.
+                  /* jssor slider bullet navigator skin 01 css */
+                  /*
+                  .jssorb01 div           (normal)
+                  .jssorb01 div:hover     (normal mouseover)
+                  .jssorb01 .av           (active)
+                  .jssorb01 .av:hover     (active mouseover)
+                  .jssorb01 .dn           (mousedown)
+                  */
+                  .jssorb01 {
+                  position: absolute;
+                  }
+                  .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+                  position: absolute;
+                  /* size of bullet elment */
+                  width: 12px;
+                  height: 12px;
+                  filter: alpha(opacity=70);
+                  opacity: .7;
+                  overflow: hidden;
+                  cursor: pointer;
+                  border: #000 1px solid;
+                  }
+                  .jssorb01 div { background-color: gray; }
+                  .jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+                  .jssorb01 .av { background-color: #fff; }
+                  .jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+                  /* jssor slider arrow navigator skin 13 css */
+                  /*
+                  .jssora13l                  (normal)
+                  .jssora13r                  (normal)
+                  .jssora13l:hover            (normal mouseover)
+                  .jssora13r:hover            (normal mouseover)
+                  .jssora13l.jssora13ldn      (mousedown)
+                  .jssora13r.jssora13rdn      (mousedown)
+                  .jssora13l.jssora13lds      (disabled)
+                  .jssora13r.jssora13rds      (disabled)
+                  */
+                  .jssora13l, .jssora13r {
+                  display: block;
+                  position: absolute;
+                  /* size of arrow element */
+                  width: 40px;
+                  height: 50px;
+                  cursor: pointer;
+                  background: url('img/a13.png') no-repeat;
+                  overflow: hidden;
+                  }
+                  .jssora13l { background-position: -10px -35px; }
+                  .jssora13r { background-position: -70px -35px; }
+                  .jssora13l:hover { background-position: -130px -35px; }
+                  .jssora13r:hover { background-position: -190px -35px; }
+                  .jssora13l.jssora13ldn { background-position: -250px -35px; }
+                  .jssora13r.jssora13rdn { background-position: -310px -35px; }
+                  .jssora13l.jssora13lds { background-position: -10px -35px; opacity: .3; pointer-events: none; }
+                  .jssora13r.jssora13rds { background-position: -70px -35px; opacity: .3; pointer-events: none; }
+                #jssor_1(style='position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 300px; overflow: hidden; visibility: hidden;')
+                  // Loading Screen
+                  div(data-u='loading', style='position: absolute; top: 0px; left: 0px;')
+                    div(style='filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;')
+                    div(style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;")
+                  div(data-u='slides', style='cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 300px; overflow: hidden;')
+                    a(data-u='any', href='http://www.jssor.com', style='display:none') Nearby Image Partial Visible Slider
+                    div(data-p='112.50')
+                      img(data-u='image', src='img/events-01.jpg')
+                    div(data-p='112.50', style='display:none;')
+                      img(data-u='image', src='img/events-02.jpg')
+                    div(data-p='112.50', style='display:none;')
+                      img(data-u='image', src='img/events-03.jpg')
+                    div(data-p='112.50', style='display:none;')
+                      img(data-u='image', src='img/events-04.jpg')
+                    div(data-p='112.50', style='display:none;')
+                      img(data-u='image', src='img/events-05.jpg')
+                    div(data-p='112.50', style='display:none;')
+                      img(data-u='image', src='img/events-06.jpg')
+                    div(data-p='112.50', style='display:none;')
+                      img(data-u='image', src='img/events-07.jpg')
+                    div(data-p='112.50', style='display:none;')
+                      img(data-u='image', src='img/events-08.jpg')
+                  // Bullet Navigator
+                  .jssorb01(data-u='navigator', style='bottom:16px;right:16px;', data-autocenter='1')
+                    div(data-u='prototype', style='width:12px;height:12px;')
+                  // Arrow Navigator
+                  span.jssora13l(data-u='arrowleft', style='top:0px;left:30px;width:40px;height:50px;', data-autocenter='2')
+                  span.jssora13r(data-u='arrowright', style='top:0px;right:30px;width:40px;height:50px;', data-autocenter='2')
+                script(type='text/javascript').
+                  jssor_1_slider_init();
+                // #endregion Jssor Slider End
+
+
+          .col-sm-6
+            .nim-service.margin-bottom
+              .nim-service-detail
+                h3 Price Range
+                p
+                  b White Package – Wedding Photo and Video Services Only
+                  br
+                  | Price: Php 125,000
+                  br
+                  |– 3 Professional Photographers
+                  br
+                  |– High Resolution edited images in DVD
+                  br
+                  |– 3 Professional Videographers
+                  br
+                  |– FULL HD Final Video with Cinematic /Music Video Edit (15-25 minutes)
+                  br
+                  |– On Site Photo AVP
+          .col-sm-6
+            .nim-service.margin-top
+              .nim-service-detail
+                p
+                  b Gray Package – Wedding Photo + Video + SDE
+                  br
+                  | Price: Php 154,000
+                  br
+                  |– 3 Professional Photographers
+                  br
+                  |– 3 professional Videographers
+                  br
+                  |– High Resolution edited images in DVD
+                  br
+                  |– 40 Pages 8”x10” Customized Wedding Album
+                  br
+                  |– FULL HD Final Video with Cinematic /Music Video Edit (15-25 minutes)
+                  br
+                  |– Same Day Edit Video (video shots taken on the wedding day will be shown at the reception)
+                  br
+                  |– On Site Photo AVP
+           .col-sm-6
+            .nim-service.margin-top
+              .nim-service-detail
+                p
+                  b Black Package – Wedding Photo + Video + Prenup + SDE
+                  br
+                  | Price: Php 174,000
+                  br
+                  |– 3 Professional Photographers
+                  br
+                  |– 3 professional Videographers
+                  br
+                  |– Prenuptial/Engagement photo shoot
+                  br
+                  |– High Resolution edited images in DVD
+                  br
+                  |– AVP of Prenup/Engagement photo shoot
+                  br
+                  |– 40 Pages 8”x10” Customized Wedding Album
+                  br
+                  |– 20 Pages 8”x8” Prenup Guestbook Album
+                  br
+                  |– FULL HD Final Video with Cinematic /Music Video Edit (15-25 minutes)
+                  br
+                  |– Same Day Edit Video (video shots taken on the wedding day will be shown at the reception)
+                  br
+                  |– On Site Photo AVP
+                  br
+                  | Freebie: 4000 lumens projector with 7.5×10 ft screen
+          .col-sm-12
+            .nim-service.margin-top
+              .nim-service-detail
+                p
+                  | *All our video packages includes glide cam, mini dollys/sliders, lapel mics and crane. For AERIAL VIDEOGRAPHY, there’s an additional fee of Php 10,000*
+
+                 
+
+              // /nim-service-detail
+            // /nim-service margin-bottom
+          // /col
+        // end row
+      // container
+      .container
+          .row.text-center
+            .col-md-12
+              h3.title
+                | Other 
+                span.themecolor Services
+              p.a-slog
+                | Let us introduce you to our packages that will definitely gives you that peace of mind. The best and affordable packages await you.
+            // /col
+          // /row
+          .gap
+          .row
+            .col-sm-4
+              .nim-service.margin-bottom
+                i.fa.fa-diamond
+                .nim-service-detail
+                  a(href='/debutante') Debutante Package
+                  p
+                    | Now that you're turning into a lady our team are ready. From the gown that you're wearing up to the roses that you're receiving, we want nothing but the best for you. Just choose to our available packages and we'll make sure that all the magical moments on you debut will be captured.
+                // /nim-service-detail
+              // /nim-service margin-bottom
+            // /col
+            .col-sm-4
+              .nim-service.margin-bottom
+                i.fa.fa-magic
+                .nim-service-detail
+                  a(href='/wedding') Wedding Package
+                  p
+                    | May it be done on church or elsewhere, our team is glad to share with you the most special day of your lives. Every angle and moment you want to capture are on the right hands. You may pick on the available packages to ensure that your memorable day will be truly remembered.
+                // /nim-service-detail
+              // /nim-service margin-bottom
+            // /col
+            .col-sm-4
+              .nim-service.margin-bottom
+                i.fa.fa-rocket
+                .nim-service-detail
+                  a(href='/kiddie') Kiddie Package
+                  p
+                    | Our photographers are available by appointment to record your birthday party. Choose to our available packages and just beep us at least one week prior to your party and we're ready to go.
+                // /nim-service-detail
+              // /nim-service margin-bottom
+            // /col
+          // end row
+        // container  
+  
+    // sub-form
+    section#contact.sub-form.text-center
+      .container
+        .col-md-12
+          h3.title
+            | Send us
+            span.themecolor  Inquiries!
+          p.lead
+            | Contact us here:
+        .row
+          .col-md-3.col-sm-3
+          .col-md-6.center-block.col-sm-6
+            .col-md-7.contact-form.wow.animated.fadeInLeft
+            form(action='contact/send', method='post')
+              .input-field
+                input.form-control(type='text', name='name', placeholder='Name.')
+              .input-field
+                input.form-control(type='email', name='email', placeholder='Email')
+              .input-field
+                input.form-control(type='text', name='subject', placeholder='Subject')
+              .input-field
+                textarea.form-control(name='message', placeholder='Message')
+              button#submit.btn.btn-blue.btn-effect(type='submit') Send
+ 
+    footer#eight.site-footer.section-spacing.text-center
+      .container
+        .row
+          .col-md-4
+            p.footer-links
+              a(href='#') Terms of Use |
+              a(href='#')  Privacy Policy
+          .col-md-4
+            small © All rights reserved 2017 | All photographs displayed on this website are the sole property of Engr. Arvin Simbulan
+          .col-md-4
+            p.footer-links
+              a(href='https://github.com/yaneetanyag/webservice') Github |
+              a(href='#')  Heroku
+            
+

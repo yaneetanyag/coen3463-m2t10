@@ -1,0 +1,364 @@
+extends layout
+
+block content
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=devidev-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Team 10 Module 2
+    //
+      [ FONT-AWESOME ICON ]
+      =========================================================================================================================
+    link(rel='stylesheet', type='text/css', href='library/font-awesome-4.3.0/css/font-awesome.min.css')
+    //
+      [ PLUGIN STYLESHEET ]
+      =========================================================================================================================
+    link(rel='shortcut icon', type='image/x-icon', href='images/arvinlogo.png')
+    link(rel='stylesheet', type='text/css', href='css/animate.css')
+    link(rel='stylesheet', type='text/css', href='css/owl.carousel.css')
+    link(rel='stylesheet', type='text/css', href='css/owl.theme.css')
+    link(rel='stylesheet', type='text/css', href='css/magnific-popup.css')
+    //
+      [ Boot STYLESHEET ]
+      =========================================================================================================================
+    link(rel='stylesheet', type='text/css', href='library/bootstrap/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', type='text/css', href='library/bootstrap/css/bootstrap.css')
+    //
+      [ DEFAULT STYLESHEET ]
+      =========================================================================================================================
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet', type='text/css', href='css/responsive.css')
+    link(rel='stylesheet', type='text/css', href='css/color/rose.css')
+  body
+    //
+      [ LOADERs ]
+      ================================================================================================================================
+    .preloader
+      .loader.theme_background_color
+        span
+    //
+      [ /PRELOADER ]
+      =============================================================================================================================
+    //
+      [WRAPPER ]
+      =============================================================================================================================
+    .wrapper
+      //
+        [NAV]
+        ============================================================================================================================
+      //
+        Navigation
+        ==========================================
+      nav.nim-menu.navbar.navbar-default.navbar-fixed-top
+        .container
+          // Brand and toggle get grouped for better mobile display
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+           
+             .row-md-4
+              // social
+              ul.social
+                li
+                  a(href='https://gmail.com/', target='_blank')
+                    i.fa.fa-google
+                
+                li
+                  a(href='https://web.facebook.com/arvin.simbulan', target='_blank')
+                    i.fa.fa-facebook
+                li
+                  a(href='https://www.youtube.com/channel/UC-WNybqooBWpWu--177iioA', target='_blank')
+                    i.fa.fa-youtube-play
+
+              // social end
+                  
+
+          // Collect the nav links, forms, and other content for toggling
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li
+                a.page-scroll(href='https://coen3463-m2t10.herokuapp.com') Home
+              li
+                a.page-scroll(href='#home') Main
+              li
+                a.page-scroll(href='#about') About
+              li
+                a.page-scroll(href='#work') Our Works
+              li
+                a.page-scroll(href='#team') Team
+             
+              li
+                a.page-scroll(href='#services') Services
+              li
+                a.page-scroll(href='#contact') Contact
+          // /.navbar-collapse
+        // /.container-fluid
+      //
+        [/NAV]
+        ============================================================================================================================
+      //
+        [/MAIN-HEADING]
+        ============================================================================================================================
+      section#home.main-heading
+        .overlay
+          .container
+            .row
+              .main-heading-content.col-md-12.col-sm-12.text-center
+                h1.main-heading-title
+                  |YOUR MESSAGE HAS BEEN 
+                  span.main-element.themecolor(data-elements='SENT')
+                p.main-heading-text
+                  br
+                  | 
+      //
+        [/MAIN-HEADING]
+        ============================================================================================================================
+      //
+        [ABOUT US]
+        ============================================================================================================================
+      section#about.aboutus.white-background.black
+        .container
+          .row
+            .col-md-12.text-center.black
+              h3.title
+                | ABOUT 
+                span.themecolor US
+              p.a-slog
+                | Arvin Simbulan Photography is one of the leading, fast-rising companies in Digital Photo and Video Services. Consistently in the TOPS bookers in Wedding Expo Philippines and Philippine Wedding Summit, biggest bridal fair in the country organized by Themes & Motifs, we give only the best quality and value-for money services.
+                
+
+          .gap
+          .row.about-box
+            .col-sm-4.text-center
+              .margin-bottom
+                i.fa.fa-newspaper-o
+                h4 CREATIVITY
+                p.black
+                  | We are committed to a culture of creativity. This comes in many forms such as in the portraits that we make and products we come up with which allows us to be ahead of our competitors. We are proud to share and build on the artistic talents of our colleagues and be able to provide them a venue to be creative.
+              // / margin
+            // /col
+            .col-sm-4.about-line.text-center
+              .margin-bottom
+                i.fa.fa-diamond
+                h4 FLEXIBILITY
+                p.black
+                  | We are ready to capture each and every wonderful moments in your lives. Arvin Simbulan Photography offers Digital Photo and Video Services not only for weddings but as well as Birthday Party, Debut, and other Corporate Events.             
+              // / margin
+            // /col
+            .col-sm-4.text-center
+              .margin-bottom
+                i.fa.fa-area-chart
+                h4 FULLY EQUIPED
+                p.black
+                  | We use all top-of-the-line digital equipment from Nikon Cameras and Sony Video. Rest assured that all our work is created with the utmost personal care, to exceed customer expectations by delivering excellent quality service in capturing unforgettable moments and preserving memories of a lifetime.
+            // /col
+          // /row
+      //
+        [/ABOUTUS]
+        ============================================================================================================================
+      //
+        [RECENT-WORKS]
+        ============================================================================================================================
+      section#work.recent-works.text-center
+        .container
+          .row
+            .col-md-12
+              h3.title
+                | Recent 
+                span.themecolor Works
+              p.a-slog
+               
+          .gap
+          .row
+            .col-sm-4.port-item.margin-bottom
+              .item-img-wrap
+                img.img-responsive(src='images/work-1.jpg', alt='workimg')
+                .item-img-overlay
+                  a.show-image(href='images/work-1.jpg')
+                    span
+              .work-desc
+                h3
+                  a(href='#') Wedding
+                
+            // /portfolio-item
+            .col-sm-4.port-item.margin-bottom
+              .item-img-wrap
+                img.img-responsive(src='images/work-2.jpg', alt='workimg')
+                .item-img-overlay
+                  a.show-image(href='images/work-2.jpg')
+                    span
+              .work-desc
+                h3
+                  a(href='#') Prenup
+                
+            // /portfolio-item
+            .col-sm-4.port-item.margin-bottom
+              .item-img-wrap
+                img.img-responsive(src='images/work-3.jpg', alt='workimg')
+                .item-img-overlay
+                  a.show-image(href='images/work-3.jpg')
+                    span
+              .work-desc
+                h3
+                  a(href='#') Debut
+                
+            // /portfolio-item
+          // /row
+          .row
+            .col-md-12.text-center
+              a.btn.btn-custom.theme_background_color(href='#services') Check Our Service Packages
+          // /row
+        // /container
+      // / Portfolio
+      //
+        [/OUR-RECENT WORKS]
+        ============================================================================================================================
+      //
+        [OUR TEAM]
+        ============================================================================================================================
+      section#team.our-team.white-background.black
+        .container
+          .row.text-center
+            .col-md-12
+              h3.title
+                | Creative 
+                span.themecolor Team
+              p.a-slog
+               
+          .row.text-center
+            .col-sm-3
+              
+            // team-member
+            .col-sm-3
+              img.img-responsive(src='images/team-2.jpg', alt='team-member')
+              h4 Yanee Tanyag
+              h5 Owner
+              p
+                | Hey, I’m Yanee Tanyag residing in this beautiful world. I create websites and mobile...
+              ul.list-inline.top20
+                li
+                  a(href='#')
+                    i.fa.fa-facebook
+                li
+                  a(href='#')
+                    i.fa.fa-twitter
+                li
+                  a(href='#')
+                    i.fa.fa-tumblr
+               
+            // team-member
+            .col-sm-3
+              img.img-responsive(src='images/team-3.jpg', alt='team-member')
+              h4 Jan Policarpio
+              h5 Owner
+              p
+                | Hey, I’m Jan Policarpio residing in this beautiful world. I create websites and mobile...
+              ul.list-inline.top20
+                li
+                  a(href='#')
+                    i.fa.fa-facebook
+                li
+                  a(href='#')
+                    i.fa.fa-twitter
+                li
+                  a(href='#')
+                    i.fa.fa-tumblr
+               
+            // team-member
+            .col-sm-3
+             
+            // team-member
+          // end row
+          .row.margin-top
+            .col-md-12.text-center
+              a.btn.btn-custom.theme_background_color(href='https://coen3463-m1t10.herokuapp.com/') Know More About Us
+            // /col
+          // /row
+      //
+        [/OUR TEAM]
+        ============================================================================================================================
+     
+      //
+        [/SERVICES]
+        ============================================================================================================================
+      section#services.services.white-background.black
+        .container
+          .row.text-center
+            .col-md-12
+              h3.title
+                | We Are 
+                span.themecolor Good In
+              p.a-slog
+                | Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty
+            // /col
+          // /row
+          .gap
+          .row
+            .col-sm-4
+              .nim-service.margin-bottom
+                i.fa.fa-diamond
+                .nim-service-detail
+                  a(href='/portraits') Portraits
+                  p
+                    | Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty dolor site amet ne onseceruter adipiscing
+                // /nim-service-detail
+              // /nim-service margin-bottom
+            // /col
+            .col-sm-4
+              .nim-service.margin-bottom
+                i.fa.fa-tablet
+                .nim-service-detail
+                  a(href='/events') Events
+                  p
+                    | Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty dolor site amet ne onseceruter adipiscing
+                // /nim-service-detail
+              // /nim-service margin-bottom
+            // /col
+            .col-sm-4
+              .nim-service.margin-bottom
+                i.fa.fa-tablet
+                .nim-service-detail
+                  a(href='/video') Videos
+                  p
+                    | Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty dolor site amet ne onseceruter adipiscing
+                // /nim-service-detail
+              // /nim-service margin-bottom
+            // /col
+          // end row
+        // container
+      //
+        [/SERVICES]
+        ============================================================================================================================
+      //
+        [CONTACT]
+        ============================================================================================================================
+      // sub-form
+      section#contact.sub-form.text-center
+        .container
+          .col-md-12
+            h3.title
+              | Send us
+              span.themecolor  Inquiries!
+            p.lead
+              | Contact us here:
+          .row
+            .col-md-3.col-sm-3
+            .col-md-6.center-block.col-sm-6
+              .col-md-7.contact-form.wow.animated.fadeInLeft
+              form(action='contact/send', method='post')
+                .input-field
+                  input.form-control(type='text', name='name', placeholder='Name.')
+                .input-field
+                  input.form-control(type='email', name='email', placeholder='Email')
+                .input-field
+                  input.form-control(type='text', name='subject', placeholder='Subject')
+                .input-field
+                  textarea.form-control(name='message', placeholder='Message')
+                button#submit.btn.btn-blue.btn-effect(type='submit') Send
+      //
+        [/CONTACT]
+        ============================================================================================================================
+
